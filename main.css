@@ -43,7 +43,7 @@ html, body, #page-content {
   overflow: auto;
 }
  
-#popup {
+#modal01 {
   position: fixed;
   top: 0;
   left: 0;
@@ -55,9 +55,6 @@ html, body, #page-content {
   height: 100%;
   overflow: scroll;
 }
-
-
-
 
 
 blockquote, q {
