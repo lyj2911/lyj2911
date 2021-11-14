@@ -78,59 +78,58 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Commssion</h2>
-								<span class="image main"><img src="/pic03.jpg" alt="" /></span>
-								<p></p>
+								<!-- Photo grid -->
+    <div class="w3-row-padding w3-grayscale" style="margin-bottom: 128px">
+        <div class="w3-half">
+          <img src="/C1-1-1.jpg" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-1.png" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-10.png" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-8.jpg" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-5.png" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-2.jpg" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-16.png" style="max-width:100%" onclick="onClick(this)">
+          <img src="/C1-15.jpg" style="max-width:100%" onclick="onClick(this)" alt="@_csky1">
+          <img src="/C1-17.jpg" style="max-width:100%" onclick="onClick(this)">
+        </div>
+    
+        <div class="w3-half">
+            <img src="/C1-7.png" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-11.jpg" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-6.jpg" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-9.png" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-13.png" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-4.png" style="max-width:100%" onclick="onClick(this)">
+            <img src="/C1-14.jpg" style="max-width:100%" onclick="onClick(this)" alt="@rubyjane_cm">
+            <img src="/C1-12.png" style="max-width:100%" onclick="onClick(this)" alt="@_DORCM">
+    
+        </div>
+      </div>
+    
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+    
+    <script>
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Gallery</h2>
-                                <!-- Photo grid -->
-    <div class="w3-row-padding w3-grayscale" style="margin-bottom: 128px">
-    <div class="w3-half">
-      <img src="/C1-1-1.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-1.png" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-10.png" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-8.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-5.png" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-2.jpg" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-16.png" style="width:100%" onclick="onClick(this)">
-      <img src="/C1-15.jpg" style="width:100%" onclick="onClick(this)" alt="@_csky1">
-      <img src="/C1-17.jpg" style="width:100%" onclick="onClick(this)">
-    </div>
-
-    <div class="w3-half">
-        <img src="/C1-7.png" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-11.jpg" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-6.jpg" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-9.png" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-13.png" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-4.png" style="width:100%" onclick="onClick(this)">
-        <img src="/C1-14.jpg" style="width:100%" onclick="onClick(this)" alt="@rubyjane_cm">
-        <img src="/C1-12.png" style="width:100%" onclick="onClick(this)" alt="@_DORCM">
-
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-<script>
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+                                
 
 							</article>
 					</div>
