@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>GALLERY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body,h1 {font-family: "Raleway", Montserrat, sans-serif}
+h1 {letter-spacing: 3px}
+.w3-row-padding img {margin-bottom: 12px}
+body {
+  background: #1b1f22;
+
+}
+
+h1 {
+		color: #ffffff;
+    font-size: 15px;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+	}
+
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-medium" style="display:none;padding-top:80px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-medium w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black", onclick="location.href='https://lyj2911.github.io/RE.html'">HOME</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black", onclick="location.href='https://lyj2911.github.io/RE.html#R1'">RYAN</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">EUNICE</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">COMMISION</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">GALLERY</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-clear">
+  <span class="w3-button w3-medium w3-black w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+  <div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom w3-padding-32">
+  <h1><b>GALLERY</b></h1>
+</header>
+</div>
+
+<!-- Photo grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom: 128px">
+    <div class="w3-half">
+      <img src="/J-1.png" style="width:100%" onclick="onClick(this)">
+      <img src="/J-3.png" style="width:100%" onclick="onClick(this)">
+      <img src="/J-5.jpg" style="width:100%" onclick="onClick(this)">
+      <img src="/J-7.png" style="width:100%" onclick="onClick(this)">
+      <img src="/J-9.png" style="width:100%" onclick="onClick(this)">
+      <img src="/J-10.png" style="width:100%" onclick="onClick(this)">
+      <img src="/J-12.png" style="width:100%" onclick="onClick(this)" alt="@_DORCM">
+    </div>
+
+    <div class="w3-half">
+        <img src="/J-2.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="J-4.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="/J-6.png" style="width:100%" onclick="onClick(this)">
+        <img src="/J-8.png" style="width:100%" onclick="onClick(this)">
+        <img src="/J-11.jpg" style="width:100%" onclick="onClick(this)">
+        <img src="/C1-4.png" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+<!-- End Page Content -->
+</div>
+
+</body>
+</html>
