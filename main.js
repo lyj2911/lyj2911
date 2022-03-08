@@ -305,33 +305,7 @@
 
 			});
 
-		// Events.
-			$body.on('click', function(event) {
-
-				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
-
-			});
-
-			$window.on('keyup', function(event) {
-
-				switch (event.keyCode) {
-
-					case 27:
-
-						// Article visible? Hide.
-							if ($body.hasClass('is-article-visible'))
-								$main._hide(true);
-
-						break;
-
-					default:
-						break;
-
-				}
-
-			});
+		
 
 			$window.on('hashchange', function(event) {
 
